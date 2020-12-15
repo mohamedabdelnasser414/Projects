@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    background-color: paleturquoise;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+hr{
+    border: none;
+    border-top: dotted 5px #263a3a;
+    max-width: 4%;
+    margin: 2rem auto;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    padding: 2rem;
+    color: #719898;
+    text-align: center;
+}
+p {
+    line-height: 2;
+    color: #40512e;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 2rem;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #719898;
+    padding-bottom: 2rem;
+}
+.btn {
+    text-decoration: none;
+    font-size: 2rem;
+    padding:  1rem 2rem;
+    color:  lavender;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-color: #5f7fa5;
+}
+.btn:hover{
+    color: honeydew;
+}
+/******************* Showcase ******************/
+.showcase {
+    background: #eaf6f6;
+    position: relative;
+    padding-top: 13rem;
+    overflow: hidden;
+}
+.cloud-top{
+    width: 300px;
+    position: absolute;
+    right: 20%;
+    top: 30px;
+}
+.showcase h1 {
+    font-family: 'Sacramento', cursive;
+    font-weight: 500px;
+    color: #66bfbf;
+    font-size: 5rem;
+}
+.container {
+    position: relative;
+    z-index: 3;
+}
+.profile-icon {
+    width: 70px;
+}
+.showcase p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #66bfbf;
+    font-weight: 600px;
+    position: relative;
+    z-index: 3;   
+}
+.cloud-bottom{
+    width: 300px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+}
+.main{
+    size: 60vh;
+    z-index: 2;
+    position: relative;
+    top: 60px;   
+}
+/******************* Intro ******************/
+.intro{
+    padding: 3rem;
+    background-color: seashell ;
+}
+.profile-pic {
+    width: 400px;
+    margin: 3rem;
+}
+.intro p {
+    margin: auto;
+    max-width: 600px;
+}
+/******************* My Skills ******************/
+.skills{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding: 2rem;
+}
+ .skills img{ 
+    width: 300px;   
+}
+.skill-top {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+.skill-bottom {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+/******************* Contact ******************/
+
+.contacts {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.contacts p {
+    max-width: 50%;
+    margin: auto;
+    padding-bottom: 4rem;
+    color: rgb(46, 52, 49);
+}
+.contacts h2{
+    padding: 1rem;
+}
+
+/******************* Footer ******************/
+
+footer{
+    padding: 1rem;
+    background-color:#66bfbf;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 2rem;
+    display: inline-block;
+    color: cornsilk;
+}
+footer a:hover{
+    color: ghostwhite;
+}
+footer p{ 
+    color: #eaf6f6;
+    padding-bottom: 1rem;
+}
+
+/******************* Media Query ******************/
+
+@media(max-width:830px){
+    .skill-top {
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
+        text-align: center;
+        justify-items: center;
+        padding-top: 2rem;
+    }
+    .skill-bottom {
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
+        text-align: center;
+        justify-items: center;
+    }
+    .contacts p {
+        max-width: 80%;
+    }
+}

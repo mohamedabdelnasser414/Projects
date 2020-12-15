@@ -1,0 +1,231 @@
+/***************************** General ************************* */
+
+:root {
+    --primary: #ddd;
+    --dark:#333;
+    --light:#fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+html, * {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 2rem 3rem;
+    background: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    text-decoration: none;
+    padding:1rem 1.3rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: cadetblue;
+    color: var(--dark);
+}
+
+/************************************ Navigation *************************************** */
+
+.main-nav ul{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    padding-bottom: 1rem;
+}
+.main-nav ul a{
+    text-decoration: none;
+    color: var(--dark);
+    background: var(--primary);
+    display:block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+.main-nav a:hover{
+    background: var(--dark);
+    color:var(--light);
+}
+
+/* ********************************* Top Container ************************************* */
+
+.top-container{
+    display:grid;
+    gap: 20px;
+    grid-template-areas: 
+    "showcase showcase box-a"
+    "showcase showcase box-b";
+    margin-bottom: 2rem;
+}
+.showcase{
+    grid-area: showcase;
+    min-height: 600px;
+    background: url(/Gridbiz/Images/ShowCase.jpg);
+    background-size: cover;
+    color: var(--light);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.showcase h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+.showcase p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.top-box {
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+.price  {
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+.box-a {
+    grid-area: box-a;
+}
+.box-b{
+    grid-area: box-b;
+}
+
+/*************************************** Boxes Section ******************************************/
+
+.boxes{
+    display:grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-bottom: 2rem;    
+}
+.box{
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+    padding:2rem;
+    text-align: center;
+}
+.box i , .box h2 , .box p {
+    padding: 1rem;
+}
+
+/*************************************** Info Section ******************************************/
+
+.info {
+    display:grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem; 
+    background-color: var(--primary);
+    box-shadow: var(--shadow); 
+    padding: 2rem;
+}
+.info img {
+    width: 100%;
+}
+.info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.info p {
+    padding:  1rem 0;
+}
+.info h2 {
+    font-size: 1.6rem;
+    color: var(--dark);
+}
+
+/*************************************** Portfolio ***************************************** */
+
+.portfolio {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-bottom: 2rem;
+}
+
+.portfolio img{
+    box-shadow: var(--shadow);
+    width: 100%;
+}
+
+/* ************************************** Footer ************************************************ */
+
+footer{
+    color:var(--light);
+    background-color: var(--dark);
+    padding: 2rem;
+    text-align: center;
+}
+
+/*************************************** Media 750 ***************************************** */
+
+@media(max-width:750px){
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    .top-container{
+        grid-template-areas: 
+        "showcase  "
+        "showcase  "
+        "box-a"
+        "box-b";
+    }
+    .top-box{
+        padding: 2rem;
+    }
+    .showcase{
+        text-align: center;
+        padding: 0;
+    }
+    .showcase h1 { 
+        font-size:3rem;
+    }
+
+    .boxes{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .info{
+        grid-template-columns: 1fr;  
+    }
+    .info div {
+        align-items: center;
+        padding: 1rem;
+    }
+    .info a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*  *************************************** Media 500 ********************************************** */
+
+@media(max-width:500px){
+    .showcase{
+        text-align: center;
+    }
+    .showcase h1 { 
+        font-size:2rem;
+        padding-bottom: 1rem;
+    }
+    .showcase p { 
+        font-size:1rem;
+    }
+}

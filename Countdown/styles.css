@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: url(./NYE.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: lemonchiffon;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-top: 150px ;
+    text-align: center;    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.time-unit {
+    margin: 2rem;
+}
+.top{
+    font-size: 4rem;
+}
+.bottom {
+    font-size: 2rem;
+    font-weight: bold;
+}

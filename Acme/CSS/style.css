@@ -1,0 +1,280 @@
+/*********************************** Global ***********************************/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 0;
+	margin :0;
+	box-sizing: border-box;
+}
+.container {
+	overflow: hidden;
+	width:75%;
+	margin:auto;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.button-1 {
+	font-size: 1.2rem;
+ 	background:#e8491d;
+	border:0;
+	padding: 10px 20px;
+	color:#ffffff;
+}
+.dark {
+	color: #ffffff;
+	background:#35424a;
+}
+
+/********************************** Header ***********************************/
+
+header {
+	background-color: #474747;
+	color: #ffffff;
+	padding: 2rem 0;
+	border-bottom: 3px solid #eba456;
+}
+.logo {
+	float:left;
+	padding: 0;
+	margin:0;
+	font-size: 30px;
+}
+header nav {
+	float: right;
+	padding:0;
+}
+header li {
+	float:left;
+	margin-top:10px;
+	margin-left: 3rem;
+}
+header li a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.highlight, .current a {
+	color:#e8491d;
+ 	font-weight:bold;
+}
+
+/********************************** Showcase **************************/
+
+.showcase {
+	min-height: 300px;
+	color: #ffffff;
+	background: url(../Images/showcase.jpg) -100px -300px;
+	text-align: center;
+	padding: 10% 17%;
+}
+.showcase h1 {
+	font-size: 3rem; 
+}
+.showcase p{
+	font-size: 1.3rem;
+}
+
+/********************************** Newsletter *********************************/
+
+.newsletter{
+	padding: 2rem 0;
+	background-color: #474747;
+	color: #ffffff;
+}
+.newsletter h2 { 
+	float: left;
+	font-size: 1.5rem;
+}
+.newsletter form {
+	margin-top: 1.4rem;
+	float: right;
+}
+.newsletter form input {
+	font-size: 1.2rem;
+	padding:8px;
+	width:200px;	
+}
+
+/*********************************** Boxes **********************************/
+
+.boxes {
+	margin: 5rem 0;
+	text-align: center;
+}
+.boxes h3 {
+	font-size: 1.5rem;
+}
+.box{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+.box:last-child{
+	margin-right: 0;
+}
+.box img{
+	width: 90px;
+}
+
+/*************************************** About page ****************************/
+.main-about {
+	padding: 4rem 0;
+	min-height: 70vh;
+	font-size: 1.1rem;
+	line-height: 2;
+}
+.main-about h1 {
+	font-size: 2rem;
+}
+ .main-col {
+	float: left;
+	width: 55%;
+}
+.main-about aside {
+	float:right;
+	width:25%;
+	margin-top: 7rem;
+	padding: 2rem;
+}
+
+	
+/*************************************** Services page ******************************/
+
+.main-services {
+	padding: 4rem 0;
+	min-height: 70vh;
+	font-size: 1.1rem;
+}
+.main-services h1 {
+	font-size: 2rem;
+}
+.main-col {
+	float: left;
+	width: 60%;
+}
+.main-services li {
+	list-style: none;
+ 	padding:1rem;
+ 	border: #cccccc solid 1px;
+ 	margin-bottom: 1.3rem;
+ 	background: #e6e6e6;
+}
+.main-services ul h3{
+	margin: 0;
+}
+.main-services aside{
+	float: right;
+	width: 25%;
+	margin-top: 7rem;
+	padding: 1rem;
+}
+.main-services aside input,.main-services aside textarea {
+	width:100%;
+	font-size: 1.1rem;
+	box-sizing: border-box;
+	padding: 6px;
+	border: 1px solid #ffffff;
+} 
+.main-services aside button {
+	width: 100%;
+}
+
+/******************************* Footer ******************************/
+
+footer{
+	padding: 2rem;
+	text-align: center;
+	color: #ffffff;
+	background-color: #eba456;
+	}
+
+	 
+/********************************* Media Query *****************************/
+@media (max-width:920px){
+	.newsletter h2,
+	.newsletter form{
+		float: none;
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 768px){
+	.logo ,header nav, header nav li, .newsletter h2,
+	.newsletter form, .box, .main-about .main-col,
+	.main-about aside, .main-about .main-col,
+	.main-about aside, .main-services .main-col,
+	.main-services aside{
+		float: none;
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	header{
+		padding-bottom: 10px;
+	}
+	header li{
+		margin-left: 0;
+	}
+	
+	.showcase h1 {
+		margin-top: 50px;
+	}
+	.newsletter form input {
+		width: 60%;
+		margin-bottom: 5px;
+		padding: 5px 0;
+		border: 0;
+		text-align: center;
+		}
+	.newsletter form button {
+		width: 60%;
+		padding: 5px;
+		margin: 0;
+	}
+
+/******************************** About page *******************************/
+
+	.main-about .main-col p ,.main-about aside p {
+		text-align: left;
+		line-height: 1.5;
+	}
+	.main-about aside {
+		margin-bottom: 5px;
+	}
+
+/******************************** services *******************************/
+
+.main-services .quote  input, .main-services .quote  textarea { 
+    width: 60%;
+	margin-bottom: 5px;
+	padding: 5px 0;
+	border: 0;
+	max-width: none;
+	text-align: center;
+}
+        .main-services .quote  button{
+        	width: 60%;
+        }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

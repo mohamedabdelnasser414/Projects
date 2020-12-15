@@ -1,0 +1,182 @@
+body,*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #474747;
+}
+
+h1,h2,h3,h4,h5,h6, .title {
+	font-family: "Economica",sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 1em;
+}
+h2{
+	font-size: 1.6rem;
+}
+h3{
+	font-size: 1.2rem;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover ,a:visted, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+p{
+	margin:0.5em 0;
+	line-height: 1.3em;
+}
+.fixed-width {
+	width:940px;
+	margin: 0 auto;
+}
+
+.clearfix:after,
+.clearfix:before{
+	content:" ";
+	display: table;
+}
+.clearfix:after{
+	clear:both;
+}
+.data-block {
+	margin-bottom: 3rem;
+}
+
+/*************************************** Header ***********************************/
+
+.page-header{
+	border-top: 5px solid #ebebeb;
+	padding:2em;
+}
+.page-header > div {
+position: relative;
+}
+.page-header .logo {
+	font-family: "pacifico", cursive;
+	font-size: 3.5em;
+	position: absolute;
+	bottom: 0;
+}
+.page-header nav {
+	float: right;
+	font-family: "Economica",sans-serif;
+	text-transform: uppercase;
+}
+.page-header nav li{
+	float:left;
+	color: #bfbfbf;
+	margin-right: 3rem;
+	margin-top: 3rem;
+}
+.page-header nav li:last-child { 
+	margin-right: 0;
+}
+.page-header nav li em{
+	display:block;
+	color:#474747;
+	font-size: 1,6em;
+}
+
+/**************************************** Main Visual **********************************/
+
+.main-visual img {
+	display:block;
+}
+.main-visual figcaption {
+	background-color: #f6f6f6;
+	padding: 1rem 1rem;
+}
+.main-visual figcaption> strong {
+	font-size: 1.4rem;
+}
+
+/**************************************** Claim *******************************************/
+
+.claim {
+	float: left;
+	width: 30%;
+	margin-right:5%;
+}
+.claim:last-child {
+	margin-right: 0;
+}
+.claim header > i {
+	font-size: 2.5rem;
+	font-weight:bold;
+	color :#9a9a9a;
+	float:left; 
+	width:25%;
+}
+.claim header > h2{
+	float:left;
+	width: 75%;
+}
+
+/*************************************** portfolio *****************************************/
+
+.portfolio {
+	position: relative;	
+}
+.portfolio:before{
+	content: " ";
+	display:block;
+	height: 30px;
+	background:url(/HomePage/Images/Pattern.png) left top repeat-x;
+	 margin-bottom: 2em;
+}
+.title-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.portfolio h2 {
+	background-color: white;
+	padding :0.8em;
+	display: inline;
+}
+.work{
+	float:left;
+	width:22%;
+	margin-right: 4%;
+
+}
+.work:last-child{
+	margin-right: 0;
+}
+.work figure {
+	margin-bottom:1em; 
+}
+
+/***************************************** Footer **************************/
+
+.page-footer:before{
+	content: " ";
+	display: block;
+	height: 5px;
+	background:url(/HomePage/Images/Pattern.png) left top repeat-x;
+}
+.page-footer{
+	background-color: #f4f4f4;
+	font-size: 1em;
+	color: #9b9b9b;
+	height: 70px;
+	}
+.page-footer-content{
+	padding: 1em 0; 
+}
+.page-footer .copyright{
+	float:left;
+}
+.page-footer .credits{
+	float:right;
+}
